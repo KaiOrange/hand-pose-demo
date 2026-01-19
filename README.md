@@ -12,17 +12,6 @@
 - **自适应界面**: 支持窗口大小调整，粒子系统自动适应屏幕尺寸
 - **视觉反馈**: 实时显示手势状态和调试信息
 
-## 启动
-
-```bash
-# install anywhere
-npm install -g anywhere
-# use anywhere start
-anywhere
-```
-
-> 注：需要打开https的链接，否则无法使用摄像头。本地运行由于没有证书会有安全警告，忽略就行。
-
 ## 技术栈
 
 - HTML5 Canvas
@@ -35,9 +24,9 @@ anywhere
 
 ### 本地运行
 
-1. 确保你有一个支持HTML文件服务的Web服务器，例如：
+1. 确保你有一个支持HTML文件服务的Web服务器，并打开HTTPS协议的地址，例如：
+   - Node.js: `npx serve` 或者 `npx anywhere`
    - Python: `python -m http.server 8000`
-   - Node.js: `npx serve`
    - Live Server (VS Code插件)
 
 2. 直接打开 [index.html](file://d:\workspace\hand-pose-demo\index.html) 文件无法正常工作，因为摄像头访问需要HTTPS或localhost环境
